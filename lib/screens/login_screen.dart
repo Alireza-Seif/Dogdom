@@ -23,6 +23,7 @@ class Login extends StatelessWidget {
           Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
+              const SizedBox(height: 150),
               const Text(
                 AppString.appName,
                 style: TextStyle(color: Colors.white, fontSize: 46),
@@ -40,25 +41,80 @@ class Login extends StatelessWidget {
                   ],
                 ),
                 child: InternationalPhoneNumberInput(
-                    keyboardType: TextInputType.phone,
-                    inputDecoration: const InputDecoration(
-                      border: InputBorder.none,
-                      icon: Icon(Icons.keyboard_arrow_down,
-                          color: Colors.white,size: 31,),
-                    ),
-                    onInputChanged: (PhoneNumber number) {},
-                    selectorTextStyle: const TextStyle(
-                      color: Colors.white,
-                      fontSize: 21.0,
-                    ),
+                  keyboardType: TextInputType.phone,
+                  cursorColor: Colors.white,
+                  textStyle:
+                      const TextStyle(color: Colors.white, fontSize: 21.0),
+                  inputDecoration: const InputDecoration(
+                    border: InputBorder.none,
+                    // icon: Icon(
+                    //   Icons.expand_more_outlined,
+                    //   color: Colors.white,
+                    // ),
+                  ),
+                  onInputChanged: (PhoneNumber number) {
+                    print(number.phoneNumber);
+                  },
+                  selectorConfig: const SelectorConfig(
+                    selectorType: PhoneInputSelectorType.BOTTOM_SHEET,
+                    showFlags: false,
+                  ),
+                  selectorTextStyle: const TextStyle(
+                    color: Colors.white,
+                    fontSize: 21.0,
+                  ),
+                ),
+              ),
+              ElevatedButton(
+                onPressed: () {},
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: const Color(0xFFFA6650),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(65),
+                  ),
+                ),
+                child: Container(
+                  height: 58,
+                  width: 319,
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 18, horizontal: 10),
+                  alignment: Alignment.center,
+                  child: const Text(
+                    'Get Captcha',
+                    style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                  ),
+                ),
+              ),
+              const Row(
+                children: [
+                  SizedBox(
+                    width: 35,
+                    height: 30,
+                  ),
+                  Text(
+                    'Password to Login',
+                    style: TextStyle(fontSize: 13, color: Colors.white),
+                  )
+                ],
+              ),
+              const SizedBox(
+                height: 150,
+              ),
+              Container(
+                padding: const EdgeInsets.fromLTRB(0, 200, 0, 0),
+                child: const Text(
+                  '''By signing in, you agree to the User Agreement
+                          and Privacy Terms.''',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 13,
+                  ),
                 ),
               ),
             ],
           )
-        ]
-        ,
-      )
-      ,
+        ],
+      ),
     );
   }
 }
