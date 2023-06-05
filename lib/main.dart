@@ -1,4 +1,4 @@
-import 'package:dogdom/screens/login_screen.dart';
+import 'package:dogdom/screens/splash_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      home: Login(),
+      home: Splash(),
     );
   }
 }
