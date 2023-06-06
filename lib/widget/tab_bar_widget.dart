@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 
-class TabBarWidget extends StatelessWidget {
+class TabBarWidget extends StatefulWidget {
   const TabBarWidget({Key? key}) : super(key: key);
 
-  @override
   Widget build(BuildContext context) {
     return Container(
       width: 375,
@@ -16,5 +15,11 @@ class TabBarWidget extends StatelessWidget {
         ),
       ),
     );
+  }
+
+  @override
+  State<StatefulWidget> createState() {
+    // TODO: implement createState
+    throw UnimplementedError();
   }
 }
