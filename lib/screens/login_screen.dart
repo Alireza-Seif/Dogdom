@@ -2,7 +2,7 @@ import 'package:dogdom/constants/app_strings.dart';
 import 'package:flutter/material.dart';
 import 'package:intl_phone_number_input/intl_phone_number_input.dart';
 
-import 'home_screen_select.dart';
+import 'home_screen.dart';
 
 class Login extends StatelessWidget {
   const Login({Key? key}) : super(key: key);
@@ -74,7 +74,7 @@ class Login extends StatelessWidget {
                       Navigator.pushReplacement(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => const HomeScreenSelect()),
+                            builder: (context) => const HomeScreen()),
                       );
                   //  }
                   },
