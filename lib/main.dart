@@ -1,5 +1,4 @@
 import 'package:dogdom/screens/home_screen.dart';
-import 'package:dogdom/screens/splash_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {

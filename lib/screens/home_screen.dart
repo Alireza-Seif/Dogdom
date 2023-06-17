@@ -1,5 +1,5 @@
 import 'package:dogdom/screens/select_screen.dart';
-import 'package:dogdom/widget/seatch_bar.dart';
+import 'package:dogdom/widget/search_bar.dart';
 import 'package:flutter/material.dart';
 
 import 'discover_screen.dart';

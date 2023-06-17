@@ -1,3 +1,4 @@
+import 'package:dogdom/widget/icon_bar.dart';
 import 'package:flutter/material.dart';
 
 class SelectScreen extends StatelessWidget {
@@ -5,6 +6,8 @@ class SelectScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return const Scaffold(
+      body: Column(children: [IconBarSelect(),],),
+    );
   }
 }
