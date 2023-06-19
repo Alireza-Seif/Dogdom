@@ -12,7 +12,7 @@ class AppIcons {
 
   static const revelation = '$_path/Revelation.svg';
 
-  static const send_samples = '$_path/Send_Samples.svg';
+  static const sendSamples = '$_path/Send_Samples.svg';
 
   static const surrounding = '$_path/Surrounding.svg';
 

@@ -12,7 +12,6 @@ class _SplashState extends State<Splash> {
   @override
   initState() {
     super.initState();
-    print("initState Called");
     start();
   }
 

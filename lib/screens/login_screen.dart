@@ -50,13 +50,9 @@ class Login extends StatelessWidget {
                         const TextStyle(color: Colors.white, fontSize: 21.0),
                     inputDecoration: const InputDecoration(
                       border: InputBorder.none,
-                      // icon: Icon(
-                      //   Icons.expand_more_outlined,
-                      //   color: Colors.white,
-                      // ),
+
                     ),
                     onInputChanged: (PhoneNumber number) {
-                      print(number.phoneNumber);
                     },
                     selectorConfig: const SelectorConfig(
                       selectorType: PhoneInputSelectorType.BOTTOM_SHEET,

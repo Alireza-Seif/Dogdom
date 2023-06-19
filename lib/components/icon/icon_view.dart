@@ -17,7 +17,12 @@ class IconView extends StatelessWidget {
   @override
   Widget build(BuildContext context) => SvgPicture.asset(
     icon,
-    color: color,
+    colorFilter: color != null
+        ? ColorFilter.mode(
+      color!,
+      BlendMode.srcIn,
+    )
+        : null,
     height: height,
     width: width,
   );

@@ -47,25 +47,17 @@ class _HomeScreenState extends State<HomeScreen>
                           indicatorColor: Colors.orange,
                           labelColor: Colors.black,
                           unselectedLabelColor: Colors.black,
-                          tabs: [
+                          tabs: const [
                             Tab(
                               child: Text(
                                 'Select',
-                                style: TextStyle(
-                                    fontWeight: _tabController.index == 0
-                                        ? FontWeight.bold
-                                        : FontWeight.normal,
-                                    fontSize: 17),
+                                style: TextStyle(fontSize: 17),
                               ),
                             ),
                             Tab(
                               child: Text(
                                 'Discover',
-                                style: TextStyle(
-                                    fontWeight: _tabController.index == 1
-                                        ? FontWeight.bold
-                                        : FontWeight.normal,
-                                    fontSize: 17),
+                                style: TextStyle(fontSize: 17),
                               ),
                             ),
                           ],
@@ -86,13 +78,13 @@ class _HomeScreenState extends State<HomeScreen>
                 ),
                 const SearchBarWidget(),
                 const SizedBox(height: 20),
-                Container(
+                SizedBox(
                   height: MediaQuery.of(context).size.height - 48,
                   child: TabBarView(
                     controller: _tabController,
-                    children: [
-                       SelectScreen(),
-                       DiscoverScreen(),
+                    children: const [
+                      SelectScreen(),
+                      DiscoverScreen(),
                     ],
                   ),
                 ),
