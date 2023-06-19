@@ -1,4 +1,3 @@
-import 'package:dogdom/screens/home_screen.dart';
 import 'package:dogdom/screens/splash_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -15,7 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      home:  Splash(),
+      home:  const Splash(),
       theme: ThemeData(primarySwatch: Colors.deepOrange),
     );
   }

@@ -2,6 +2,7 @@ import 'package:dogdom/screens/select_screen.dart';
 import 'package:dogdom/widget/search_bar.dart';
 import 'package:flutter/material.dart';
 
+import '../components/bottom_navigation_bar.dart';
 import 'discover_screen.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -92,7 +93,7 @@ class _HomeScreenState extends State<HomeScreen>
             ),
           ),
         ),
-      ),
+      ),bottomNavigationBar: const MyBottomNavigationBar()
     );
   }
 }

@@ -1,5 +1,3 @@
-import 'package:dogdom/components/icon/icon_view.dart';
-import 'package:dogdom/constants/app_icons.dart';
 import 'package:flutter/material.dart';
 
 class IconBarSelect extends StatelessWidget {
